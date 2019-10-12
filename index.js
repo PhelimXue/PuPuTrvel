@@ -101,18 +101,22 @@ var wishList = {
   "type": "template",
   "altText": "無法顯示選單",
   "template": {
-    "type": "buttons",
-    "text": "挑選你想去的範圍",
-    "actions": [
+    "type": "carousel",
+    "columns": [
       {
-        "type": "message",
-        "label": "台場",
-        "text": "清單-台場"
-      },
-      {
-        "type": "message",
-        "label": "輕井澤",
-        "text": "清單-輕井澤"
+        "text": "列表1",
+        "actions": [
+          {
+            "type": "message",
+            "label": "台場",
+            "text": "清單-台場"
+          },
+          {
+            "type": "message",
+            "label": "輕井澤",
+            "text": "清單-輕井澤"
+          }
+        ]
       }
     ]
   }
@@ -139,6 +143,31 @@ var odaibaList = {
         "type": "message",
         "label": "大江戶溫泉物語",
         "text": "普普-大江戶溫泉物語"
+      }
+    ]
+  }
+};
+var karuizawaList = {
+  "type": "template",
+  "altText": "無法顯示選單",
+  "template": {
+    "type": "buttons",
+    "text": "輕井澤景點",
+    "actions": [
+      {
+        "type": "message",
+        "label": "舊輕井澤銀座",
+        "text": "普普-舊銀座"
+      },
+      {
+        "type": "message",
+        "label": "雲場池",
+        "text": "普普-雲場池"
+      },
+      {
+        "type": "message",
+        "label": "輕井澤Outlet",
+        "text": "普普-輕井澤Outlet"
       }
     ]
   }
@@ -171,13 +200,13 @@ function handleEvent(event) {
     }else if(input === '4日行程'){
       reply = '上午逛上野阿美橫丁，中午左右到新橋站轉海鷗線(ゆりかもめ)到海濱公園站逛海灘走路到台場，或者直接到台場，逛AQUA CITY跟台場購物廣場，晚上去大江戶溫泉物語';
     }else if(input === '5日行程'){
-      reply = '5';
+      reply = '早上到原宿站吃bills，散開逛表參道，回到bills集合去竹下通，回到原宿吃魚米壽司，接著去池袋放風，分散逛看想幾點回去就幾點回去';
     }else if(input === '6日行程'){
-      reply = '6';
+      reply = '迪士尼一日游，搭JR轉車到舞濱站';
     }else if(input === '7日行程'){
-      reply = '7';
+      reply = '一早出發去吉祥寺逛，預計2點逛吉卜力美術館，剩下時間自由行，若太多時間可自行解散逛';
     }else if(input === '8日行程'){
-      reply = '8';
+      reply = '回程日直接搭skyliner從日暮里直達成田機場，搭車時間到之前自由活動';
     }
   }else if(input.includes('普普')){
     if(input.includes('AQUA CITY')){
@@ -186,6 +215,12 @@ function handleEvent(event) {
       reply = 'https://tw.bring-you.info/diver-city-tokyo-plaza';
     }else if(input.includes('大江戶溫泉物語')){
       reply = 'https://mimihan.tw/ooedoonsen/';
+    }else if(input.includes('舊銀座')){
+      reply = 'https://boo2k.com/archives/67489';
+    }else if(input.includes('雲場池')){
+      reply = 'https://blog.andrewplus.com/2019/02/KumobaPond.html';
+    }else if(input.includes('輕井澤Outlet')){
+      reply = 'https://www.walkerland.com.tw/japanwalker/notes/view/729?page=full';
     }
     
   }else if(input.includes('清單')){
@@ -194,7 +229,7 @@ function handleEvent(event) {
     }else if(input.includes('台場')){
       return client.replyMessage(event.replyToken, odaibaList);
     }else if(input.includes('輕井澤')){
-      
+      return client.replyMessage(event.replyToken, karuizawaList);
     }
   }else if(input === '成員'){
     reply = '阿嘉、阿婷，房號xxx\n章爸、章媽，房號xxx\n薛媽，房號xxx\n阿和、啾姊，房號xxx\n阿鈞、阿嬋，房號xxx\n阿鳳、阿如，房號xxx';
