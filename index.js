@@ -104,12 +104,77 @@ var wishList = {
     "type": "carousel",
     "columns": [
       {
-        "text": "列表1",
+        "text": "就在附近",
+        "actions": [
+          {
+            "type": "message",
+            "label": "上野",
+            "text": "清單-上野"
+          },
+          {
+            "type": "message",
+            "label": "秋葉原",
+            "text": "清單-秋葉原"
+          },
+          {
+            "type": "message",
+            "label": "淺草",
+            "text": "清單-淺草"
+          }
+        ]
+      },
+      {
+        "text": "想去就去",
+        "actions": [
+          {
+            "type": "message",
+            "label": "吉祥寺",
+            "text": "清單-吉祥寺"
+          },
+          {
+            "type": "message",
+            "label": "迪士尼",
+            "text": "清單-迪士尼"
+          },
+          {
+            "type": "message",
+            "label": "池袋",
+            "text": "清單-池袋"
+          }
+        ]
+      },
+      {
+        "text": "說走就走",
+        "actions": [
+          {
+            "type": "message",
+            "label": "涉谷",
+            "text": "清單-涉谷"
+          },
+          {
+            "type": "message",
+            "label": "原宿",
+            "text": "清單-原宿"
+          },
+          {
+            "type": "message",
+            "label": "新宿",
+            "text": "清單-新宿"
+          }
+        ]
+      },
+      {
+        "text": "難得走走",
         "actions": [
           {
             "type": "message",
             "label": "台場",
             "text": "清單-台場"
+          },
+          {
+            "type": "message",
+            "label": "河口湖",
+            "text": "清單-河口湖"
           },
           {
             "type": "message",
@@ -209,6 +274,29 @@ function handleEvent(event) {
       reply = '回程日直接搭skyliner從日暮里直達成田機場，搭車時間到之前自由活動';
     }
   }else if(input.includes('普普')){
+    switch (input) {
+      case '普普-AQUA CITY':
+          reply = 'https://www.bigfang.tw/blog/post/aquacity-odaiba';
+          break;
+      case '普普-台場購物廣場':
+          reply = 'https://tw.bring-you.info/diver-city-tokyo-plaza';
+      　  break;
+      case '普普-大江戶溫泉物語':
+          reply = 'https://mimihan.tw/ooedoonsen/';
+      　  break;
+      case '普普-舊銀座':
+          reply = 'https://boo2k.com/archives/67489';
+      　  break;
+      case '普普-雲場池':
+          reply = 'https://blog.andrewplus.com/2019/02/KumobaPond.html';
+      　  break;
+      case '普普-輕井澤Outlet':
+          reply = 'https://www.walkerland.com.tw/japanwalker/notes/view/729?page=full';
+      　  break;
+      default:
+          reply = '普普不認識這個地方喔';
+      }
+    /*
     if(input.includes('AQUA CITY')){
       reply = 'https://www.bigfang.tw/blog/post/aquacity-odaiba';
     }else if(input.includes('台場購物廣場')){
@@ -221,16 +309,81 @@ function handleEvent(event) {
       reply = 'https://blog.andrewplus.com/2019/02/KumobaPond.html';
     }else if(input.includes('輕井澤Outlet')){
       reply = 'https://www.walkerland.com.tw/japanwalker/notes/view/729?page=full';
-    }
+    }*/
     
   }else if(input.includes('清單')){
+    switch(input){
+      case '願望':
+          return client.replyMessage(event.replyToken, wishList);
+          break;
+      case '清單-台場':
+          return client.replyMessage(event.replyToken, odaibaList);
+          break;
+      case '清單-輕井澤':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-河口湖':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-上野':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-秋葉原':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-淺草':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-吉祥寺':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-迪士尼':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-池袋':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-涉谷':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-原宿':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      case '清單-新宿':
+          return client.replyMessage(event.replyToken, karuizawaList);
+          break;
+      default:
+        reply = '沒有這個清單';
+    }
+    /*
     if(input.includes('願望')){
       return client.replyMessage(event.replyToken, wishList);
-    }else if(input.includes('台場')){
+    }else if(input === '清單-台場'){
       return client.replyMessage(event.replyToken, odaibaList);
-    }else if(input.includes('輕井澤')){
+    }else if(input === '清單-輕井澤'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-河口湖'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-上野'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-秋葉原'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-淺草'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-吉祥寺'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-迪士尼'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-池袋'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-涉谷'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-原宿'){
+      return client.replyMessage(event.replyToken, karuizawaList);
+    }else if(input === '清單-新宿'){
       return client.replyMessage(event.replyToken, karuizawaList);
     }
+    */
   }else if(input === '成員'){
     reply = '阿嘉、阿婷，房號xxx\n章爸、章媽，房號xxx\n薛媽，房號xxx\n阿和、啾姊，房號xxx\n阿鈞、阿嬋，房號xxx\n阿鳳、阿如，房號xxx';
   }else if(input === '想去'){
