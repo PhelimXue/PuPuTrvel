@@ -248,7 +248,7 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
   var input = event.message.text;
-  var reply = null;
+  var reply = '有什麼問題問我，請輸入關鍵字：\n行程表、想去、想吃、成員';
 
   // 第一段貼行程
   if(input.includes('行程')){
@@ -296,21 +296,6 @@ function handleEvent(event) {
       default:
           reply = '普普不認識這個地方喔';
       }
-    /*
-    if(input.includes('AQUA CITY')){
-      reply = 'https://www.bigfang.tw/blog/post/aquacity-odaiba';
-    }else if(input.includes('台場購物廣場')){
-      reply = 'https://tw.bring-you.info/diver-city-tokyo-plaza';
-    }else if(input.includes('大江戶溫泉物語')){
-      reply = 'https://mimihan.tw/ooedoonsen/';
-    }else if(input.includes('舊銀座')){
-      reply = 'https://boo2k.com/archives/67489';
-    }else if(input.includes('雲場池')){
-      reply = 'https://blog.andrewplus.com/2019/02/KumobaPond.html';
-    }else if(input.includes('輕井澤Outlet')){
-      reply = 'https://www.walkerland.com.tw/japanwalker/notes/view/729?page=full';
-    }*/
-    
   }else if(input.includes('清單')){
     switch(input){
       case '願望':
@@ -355,35 +340,6 @@ function handleEvent(event) {
       default:
         reply = '沒有這個清單';
     }
-    /*
-    if(input.includes('願望')){
-      return client.replyMessage(event.replyToken, wishList);
-    }else if(input === '清單-台場'){
-      return client.replyMessage(event.replyToken, odaibaList);
-    }else if(input === '清單-輕井澤'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-河口湖'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-上野'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-秋葉原'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-淺草'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-吉祥寺'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-迪士尼'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-池袋'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-涉谷'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-原宿'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }else if(input === '清單-新宿'){
-      return client.replyMessage(event.replyToken, karuizawaList);
-    }
-    */
   }else if(input === '成員'){
     reply = '阿嘉、阿婷，房號xxx\n章爸、章媽，房號xxx\n薛媽，房號xxx\n阿和、啾姊，房號xxx\n阿鈞、阿嬋，房號xxx\n阿鳳、阿如，房號xxx';
   }else if(input === '想去'){
