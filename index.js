@@ -93,6 +93,15 @@ function handleEvent(event) {
       case '普普-輕井澤Outlet':
           reply = 'https://www.walkerland.com.tw/japanwalker/notes/view/729?page=full';
       　  break;
+      case '普普-芝櫻祭':
+          reply = 'https://yoke918.com/shibazakura/';
+      　  break;
+      case '普普-音樂之森':
+          reply = 'https://yoke918.com/music/';
+      　  break;
+      case '普普-忍野八海':
+          reply = 'http://www.dribs-drabs.com/blog/post/459894340-%E6%97%85%E8%A1%8C-%7C-%E6%97%A5%E6%9C%AC%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7-%E6%B2%B3%E5%8F%A3%E6%B9%96%E6%99%AF%E9%BB%9E-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B%E7%BE%8E';
+      　  break;
       default:
           reply = '普普不認識這個地方喔';
       }

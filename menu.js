@@ -217,18 +217,18 @@ var mySchedule = {
       "actions": [
         {
           "type": "message",
-          "label": "舊輕井澤銀座",
-          "text": "普普-舊銀座"
+          "label": "富士芝櫻祭",
+          "text": "普普-芝櫻祭"
         },
         {
           "type": "message",
-          "label": "雲場池",
-          "text": "普普-雲場池"
+          "label": "音樂之森",
+          "text": "普普-音樂之森"
         },
         {
           "type": "message",
-          "label": "輕井澤Outlet",
-          "text": "普普-輕井澤Outlet"
+          "label": "忍野八海",
+          "text": "普普-忍野八海"
         }
       ]
     }
