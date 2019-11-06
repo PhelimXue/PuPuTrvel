@@ -2,7 +2,15 @@
 
 const line = require('@line/bot-sdk');
 const express = require('express');
-const menuList = require('./menu.js');
+var fs = require("fs");
+
+function read(f) {
+  return fs.readFileSync(f).toString();
+}
+function include(f) {
+  eval.apply(global, [read(f)]);
+}
+include('menu.js');
 
 // create LINE SDK config from env variables
 const config = {
