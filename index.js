@@ -10,7 +10,7 @@ function read(f) {
 function include(f) {
   eval.apply(global, [read(f)]);
 }
-include('menu.js');
+include('./menu.js');
 
 // create LINE SDK config from env variables
 const config = {
