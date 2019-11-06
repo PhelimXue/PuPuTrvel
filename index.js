@@ -2,7 +2,7 @@
 
 const line = require('@line/bot-sdk');
 const express = require('express');
-const menuList = require('./manu.js');
+const menuList = require('./menu.js');
 
 // create LINE SDK config from env variables
 const config = {
