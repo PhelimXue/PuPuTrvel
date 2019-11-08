@@ -102,6 +102,18 @@ function handleEvent(event) {
       case '普普-忍野八海':
           reply = 'http://www.dribs-drabs.com/blog/post/459894340-%E6%97%85%E8%A1%8C-%7C-%E6%97%A5%E6%9C%AC%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7-%E6%B2%B3%E5%8F%A3%E6%B9%96%E6%99%AF%E9%BB%9E-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B%E7%BE%8E';
       　  break;
+      case '普普-阿美橫町':
+          reply = 'https://tw.bring-you.info/ame-yoko';
+      　  break;
+      case '普普-多慶屋':
+          reply = 'https://tokyo.letsgojp.com/archives/328552';
+      　  break;
+      case '普普-恩賜公園':
+          reply = 'https://b19890528.pixnet.net/blog/post/119657256-%E3%80%90%E6%9D%B1%E4%BA%AC%E6%97%85%E9%81%8A%E3%80%91%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92%E3%80%82';
+      　  break;
+      case '普普-谷中銀座':
+          reply = 'https://matcha-jp.com/tw/4597';
+      　  break;
       default:
           reply = '普普不認識這個地方喔';
       }
@@ -120,13 +132,13 @@ function handleEvent(event) {
           return client.replyMessage(event.replyToken, kawaguchikoList);
           break;
       case '清單-上野':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          return client.replyMessage(event.replyToken, uenoList);
           break;
       case '清單-秋葉原':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          reply = 'https://matcha-jp.com/tw/3106';
           break;
-      case '清單-淺草':
-          return client.replyMessage(event.replyToken, karuizawaList);
+      case '清單-淺草合羽橋':
+          reply = 'https://aniseblog.tw/57495';
           break;
       case '清單-吉祥寺':
           return client.replyMessage(event.replyToken, karuizawaList);

@@ -88,8 +88,8 @@ var mySchedule = {
             },
             {
               "type": "message",
-              "label": "淺草",
-              "text": "清單-淺草"
+              "label": "淺草合羽橋",
+              "text": "清單-淺草合羽橋"
             }
           ]
         },
@@ -233,3 +233,34 @@ var mySchedule = {
       ]
     }
   };
+  var uenoList = {
+    "type": "template",
+    "altText": "無法顯示選單",
+    "template": {
+      "type": "buttons",
+      "text": "上野景點",
+      "actions": [
+        {
+          "type": "message",
+          "label": "阿美橫町",
+          "text": "普普-阿美橫町"
+        },
+        {
+          "type": "message",
+          "label": "多慶屋",
+          "text": "普普-多慶屋"
+        },
+        {
+          "type": "message",
+          "label": "上野恩賜公園",
+          "text": "普普-恩賜公園"
+        },
+        {
+          "type": "message",
+          "label": "日暮里谷中銀座",
+          "text": "普普-谷中銀座"
+        }
+      ]
+    }
+  };
+  
