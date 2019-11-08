@@ -114,6 +114,18 @@ function handleEvent(event) {
       case '普普-谷中銀座':
           reply = 'https://matcha-jp.com/tw/4597';
       　  break;
+      case '普普-井之頭公園':
+          reply = 'https://tokyo.letsgojp.com/archives/81607';
+      　  break;
+      case '普普-三鷹美術館':
+          reply = 'https://alina00.com/ghibli-museum/';
+      　  break;
+      case '普普-SUN ROAD':
+          reply = 'https://tw.bring-you.info/kichijoji';
+      　  break;
+      case '普普-高圓寺商店街':
+          reply = 'https://www.tsunagujapan.com/zh-hant/tokyo-koenji-walking-map/';
+      　  break;
       default:
           reply = '普普不認識這個地方喔';
       }
@@ -141,7 +153,7 @@ function handleEvent(event) {
           reply = 'https://aniseblog.tw/57495';
           break;
       case '清單-吉祥寺':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          return client.replyMessage(event.replyToken, kichijojiList);
           break;
       case '清單-迪士尼':
           return client.replyMessage(event.replyToken, karuizawaList);

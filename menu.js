@@ -263,4 +263,34 @@ var mySchedule = {
       ]
     }
   };
+  var kichijojiList = {
+    "type": "template",
+    "altText": "無法顯示選單",
+    "template": {
+      "type": "buttons",
+      "text": "吉祥寺景點",
+      "actions": [
+        {
+          "type": "message",
+          "label": "井之頭恩賜公園",
+          "text": "普普-井之頭公園"
+        },
+        {
+          "type": "message",
+          "label": "三鷹美術館",
+          "text": "普普-三鷹美術館"
+        },
+        {
+          "type": "message",
+          "label": "SUN ROAD商店街",
+          "text": "普普-SUN ROAD"
+        },
+        {
+          "type": "message",
+          "label": "高圓寺商店街",
+          "text": "普普-高圓寺商店街"
+        }
+      ]
+    }
+  };
   
