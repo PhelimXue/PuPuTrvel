@@ -48,7 +48,7 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
   var input = event.message.text;
-  var reply = '有什麼問題問我，請輸入關鍵字：\n行程表、行程、想去、想吃、成員';
+  var reply = '有什麼問題問我，請輸入關鍵字：\n行程表、行程、想去、GO、想吃、EAT、成員';
 
   // 第一段貼行程
   if(input.includes('行程')){
@@ -163,7 +163,7 @@ function handleEvent(event) {
     }
   }else if(input === '成員'){
     reply = '阿嘉、阿婷，房號xxx\n章爸、章媽，房號xxx\n薛媽，房號xxx\n阿和、啾姊，房號xxx\n阿鈞、阿嬋，房號xxx\n阿鳳、阿如，房號xxx';
-  }else if(input === '想去'){
+  }else if(input === '想去' || input.toUpperCase() === 'GO'){
       return client.replyMessage(event.replyToken, wishList);
   }
 
