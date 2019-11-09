@@ -108,7 +108,7 @@ var mySchedule = {
             },
             {
               "type": "message",
-              "label": "池袋",
+              "label": "池袋百貨商圈",
               "text": "清單-池袋"
             }
           ]
@@ -118,7 +118,7 @@ var mySchedule = {
           "actions": [
             {
               "type": "message",
-              "label": "涉谷",
+              "label": "涉谷吃貨商圈",
               "text": "清單-涉谷"
             },
             {
@@ -128,7 +128,7 @@ var mySchedule = {
             },
             {
               "type": "message",
-              "label": "新宿",
+              "label": "新宿百貨商圈",
               "text": "清單-新宿"
             }
           ]
@@ -289,6 +289,36 @@ var mySchedule = {
           "type": "message",
           "label": "高圓寺商店街",
           "text": "普普-高圓寺商店街"
+        }
+      ]
+    }
+  };
+  var harajukuList = {
+    "type": "template",
+    "altText": "無法顯示選單",
+    "template": {
+      "type": "buttons",
+      "text": "原宿景點",
+      "actions": [
+        {
+          "type": "message",
+          "label": "明治神宮",
+          "text": "普普-明治神宮"
+        },
+        {
+          "type": "message",
+          "label": "表參道",
+          "text": "普普-表參道"
+        },
+        {
+          "type": "message",
+          "label": "竹下通商店街",
+          "text": "普普-竹下通商店街"
+        },
+        {
+          "type": "message",
+          "label": "原宿全攻略",
+          "text": "普普-原宿全攻略"
         }
       ]
     }

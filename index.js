@@ -126,6 +126,18 @@ function handleEvent(event) {
       case '普普-高圓寺商店街':
           reply = 'https://www.tsunagujapan.com/zh-hant/tokyo-koenji-walking-map/';
       　  break;
+      case '普普-明治神宮':
+          reply = 'https://tokyo.letsgojp.com/archives/52391';
+      　  break;
+      case '普普-表參道':
+          reply = 'https://blog.hotelscombined.com.tw/%E6%97%A5%E6%9C%AC-%E5%8E%9F%E5%AE%BF-%E8%A1%A8%E5%8F%83%E9%81%93-%E5%BF%85%E5%90%83%E5%BF%85%E9%80%9B-%E6%94%BB%E7%95%A5/';
+      　  break;
+      case '普普-原宿全攻略':
+          reply = 'https://udn.com/news/story/6984/3547907';
+      　  break;
+      case '普普-竹下通商店街':
+          reply = 'https://tokyo.letsgojp.com/archives/91804';
+      　  break;
       default:
           reply = '普普不認識這個地方喔';
       }
@@ -156,19 +168,19 @@ function handleEvent(event) {
           return client.replyMessage(event.replyToken, kichijojiList);
           break;
       case '清單-迪士尼':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          reply = 'https://www.klook.com/zh-TW/blog/top-tip-disney-land-tokyo/';
           break;
       case '清單-池袋':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          reply = 'https://www.funtime.com.tw/blog/funtime/%E3%80%90%E6%9D%B1%E4%BA%AC%E6%B1%A0%E8%A2%8B%E6%94%BB%E7%95%A5%E3%80%91%E8%B6%85%E5%BC%B7%E6%B1%A0%E8%A2%8B%E6%87%B6%E4%BA%BA%E5%8C%85%EF%BC%8C%E7%8E%A9%E6%B1%A0%E8%A2%8B%E4%B8%80%E7%AF%87%E6%90%9E';
           break;
       case '清單-涉谷':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          reply = 'https://matcha-jp.com/tw/3073';
           break;
       case '清單-原宿':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          return client.replyMessage(event.replyToken, harajukuList);
           break;
       case '清單-新宿':
-          return client.replyMessage(event.replyToken, karuizawaList);
+          reply = 'https://tokyo.letsgojp.com/archives/82094';
           break;
       default:
         reply = '沒有這個清單';
