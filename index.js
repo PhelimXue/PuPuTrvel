@@ -196,7 +196,7 @@ function handleEvent(event) {
   // 組合最終文字
   const echo = { type: 'text', text: reply };
   // use reply API
-  if(reply !== null){
+  if(reply !== null && !reply.startsWith('http')){
     return client.replyMessage(event.replyToken, echo);
   }else{
     return;
