@@ -303,6 +303,11 @@ var mySchedule = {
               "type": "message",
               "label": "雜貨",
               "text": "https://livejapan.com/zh-tw/in-tokyo/in-pref-tokyo/in-kichijoji/article-a0002160/"
+            },
+            {
+              "type": "message",
+              "label": "none",
+              "text": "none"
             }
           ]
         }
