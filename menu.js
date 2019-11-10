@@ -266,76 +266,7 @@ var mySchedule = {
             },
             {
               "type": "message",
-              "label": "中目黑-TRAVELER'S FACTORY",
-              "text": "https://haruhii.pixnet.net/blog/post/43634332-%E6%9D%B1%E4%BA%AC%E4%B8%AD%E7%9B%AE%E9%BB%91traveler's-factory%EF%BC%8Atn%E5%8D%81%E9%80%B1%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%B1%95"
-            }
-          ]
-        },
-        {
-          "text": "其他地區",
-          "actions": [
-            {
-              "type": "message",
-              "label": "表參道-Bills鬆餅",
-              "text": "http://mary082878.pixnet.net/blog/post/300242179"
-            },
-            {
-              "type": "message",
-              "label": "新宿-Komeda's Coffee",
-              "text": "https://royaldreambee.pixnet.net/blog/post/154249652-%E3%80%90%E6%97%A5%E6%9C%AC%E6%9D%B1%E4%BA%AC%E3%80%91%E6%8E%92%E9%9A%8A%E4%B9%9F%E8%A6%81%E5%90%83%E7%9A%84%E8%B6%85%E5%80%BC%E6%97%A9%E9%A4%90%E3%80%8C%E3%82%B3%E3%83%A1%E3%83%80"
-            },
-            {
-              "type": "message",
-              "label": "新宿-HARBS",
-              "text": "https://upssmile.com/34556/harbs-lumine-est"
-            }
-          ]
-        },
-        {
-          "text": "其他地區",
-          "actions": [
-            {
-              "type": "message",
-              "label": "銀座-中村藤吉",
-              "text": "https://tisshuang.tw/blog/post/tokichi"
-            },
-            {
-              "type": "message",
-              "label": "吉祥寺-美登利壽司",
-              "text": "https://venuslin.tw/sushinomidori/"
-            },
-            {
-              "type": "message",
-              "label": "吉祥寺-幸福鬆餅",
-              "text": "https://alina00.com/magia/"
-            }
-          ]
-        }
-      ]
-    }
-  };
-  var coldList2 = {
-    "type": "template",
-    "altText": "無法顯示選單",
-    "template": {
-      "type": "carousel",
-      "columns": [
-        {
-          "text": "列表1",
-          "actions": [
-            {
-              "type": "message",
-              "label": "合羽橋-馬嶋屋",
-              "text": "https://matcha-jp.com/tw/6469"
-            },
-            {
-              "type": "message",
-              "label": "日暮里-繊維街",
-              "text": "https://www.kiri-san.com/post/14515"
-            },
-            {
-              "type": "message",
-              "label": "中目黑-TRAVELER'S FACTORY",
+              "label": "中目黑-TRAVELERs FACTORY",
               "text": "https://haruhii.pixnet.net/blog/post/43634332-%E6%9D%B1%E4%BA%AC%E4%B8%AD%E7%9B%AE%E9%BB%91traveler's-factory%EF%BC%8Atn%E5%8D%81%E9%80%B1%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%B1%95"
             }
           ]
