@@ -48,7 +48,12 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
   var input = event.message.text;
-  var reply = '有什麼問題問我，請輸入關鍵字：\n行程表、行程、想去、GO、想吃、EAT、成員';
+  var reply = '';
+  if(input.startsWith('http')){
+    reply = input;
+  }else{
+    reply = '有什麼問題問我，請輸入關鍵字：\n行程表、行程、想去、GO、想吃、EAT、成員';
+  }
 
   // 第一段貼行程
   if(input.includes('行程')){
@@ -196,7 +201,7 @@ function handleEvent(event) {
   // 組合最終文字
   const echo = { type: 'text', text: reply };
   // use reply API
-  if(reply !== null && !reply.startsWith('http')){
+  if(reply !== null){
     return client.replyMessage(event.replyToken, echo);
   }else{
     return;
