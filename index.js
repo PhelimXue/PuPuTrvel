@@ -52,7 +52,7 @@ function handleEvent(event) {
   if(input.startsWith('http')){
     return;
   }
-  var reply = '有什麼問題問我，請輸入關鍵字：\n行程表、行程、想去、GO、想吃、EAT、成員';
+  var reply = '有什麼問題問我，請輸入關鍵字：\n行程表、行程、想去、GO、想吃、EAT、扣扣、成員';
 
   // 第一段貼行程
   if(input.includes('行程')){
@@ -195,6 +195,8 @@ function handleEvent(event) {
       return client.replyMessage(event.replyToken, wishList);
   }else if(input === '想吃' || input.toUpperCase() === 'EAT'){
       return client.replyMessage(event.replyToken, eatList);
+  }else if(input === '扣扣'){
+    return client.replyMessage(event.replyToken, coldList);
   }
 
   // 組合最終文字

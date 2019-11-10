@@ -245,6 +245,70 @@ var mySchedule = {
       ]
     }
   };
+  var coldList = {
+    "type": "template",
+    "altText": "無法顯示選單",
+    "template": {
+      "type": "carousel",
+      "columns": [
+        {
+          "text": "列表1",
+          "actions": [
+            {
+              "type": "message",
+              "label": "合羽橋-馬嶋屋",
+              "text": "https://matcha-jp.com/tw/6469"
+            },
+            {
+              "type": "message",
+              "label": "日暮里-繊維街",
+              "text": "https://www.kiri-san.com/post/14515"
+            },
+            {
+              "type": "message",
+              "label": "中目黑-TRAVELER'S FACTORY",
+              "text": "https://haruhii.pixnet.net/blog/post/43634332-%E6%9D%B1%E4%BA%AC%E4%B8%AD%E7%9B%AE%E9%BB%91traveler's-factory%EF%BC%8Atn%E5%8D%81%E9%80%B1%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%B1%95"
+            }
+          ]
+        },
+        {
+          "text": "新宿附近",
+          "actions": [
+            {
+              "type": "message",
+              "label": "niko and",
+              "text": "https://blog.plain-me.com/2015/10/6664/"
+            },
+            {
+              "type": "message",
+              "label": "TOKYO BOPPER",
+              "text": "https://matcha-jp.com/tw/396"
+            },
+            {
+              "type": "message",
+              "label": "古著",
+              "text": "https://www.moshimoshi-nippon.jp/zh-hant/118856"
+            }
+          ]
+        },
+        {
+          "text": "吉祥寺附近",
+          "actions": [
+            {
+              "type": "message",
+              "label": "Cuoca 烘焙用品",
+              "text": "https://sisicooking.blogspot.com/2019/07/tomiz-cuoca.html"
+            },
+            {
+              "type": "message",
+              "label": "雜貨",
+              "text": "https://livejapan.com/zh-tw/in-tokyo/in-pref-tokyo/in-kichijoji/article-a0002160/"
+            }
+          ]
+        }
+      ]
+    }
+  };
   
   var odaibaList = {
     "type": "template",
