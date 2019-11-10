@@ -189,6 +189,8 @@ function handleEvent(event) {
     reply = '阿嘉、阿婷，房號xxx\n章爸、章媽，房號xxx\n薛媽，房號xxx\n阿和、啾姊，房號xxx\n阿鈞、阿嬋，房號xxx\n阿鳳、阿如，房號xxx';
   }else if(input === '想去' || input.toUpperCase() === 'GO'){
       return client.replyMessage(event.replyToken, wishList);
+  }else if(input === '想吃' || input.toUpperCase() === 'EAT'){
+      return client.replyMessage(event.replyToken, eatList);
   }
 
   // 組合最終文字

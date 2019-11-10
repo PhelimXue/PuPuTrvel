@@ -156,6 +156,95 @@ var mySchedule = {
       ]
     }
   };
+  var eatList = {
+    "type": "template",
+    "altText": "無法顯示選單",
+    "template": {
+      "type": "carousel",
+      "columns": [
+        {
+          "text": "上野附近",
+          "actions": [
+            {
+              "type": "message",
+              "label": "Komeda's Coffee",
+              "text": "http://karenlu925.pixnet.net/blog/post/208971357"
+            },
+            {
+              "type": "message",
+              "label": "鰻魚名代 宇奈とと",
+              "text": "https://rika.tw/unatoto/"
+            },
+            {
+              "type": "message",
+              "label": "大統領串燒",
+              "text": "https://amonblog.com/blog/post/62646047"
+            }
+          ]
+        },
+        {
+          "text": "涉谷附近",
+          "actions": [
+            {
+              "type": "message",
+              "label": "魚米迴轉壽司",
+              "text": "https://www.bobblog.tw/uobei/"
+            },
+            {
+              "type": "message",
+              "label": "森本燒肉屋",
+              "text": "https://macaron.pixnet.net/blog/post/37219003"
+            },
+            {
+              "type": "message",
+              "label": "Harbs水果千層蛋糕",
+              "text": "https://tw.tokyocreative.com/articles/28583-ri-ben-she-gu-she-gu-bi-chi-de-harbstian-shui-guo-qian-dan-gao"
+            }
+          ]
+        },
+        {
+          "text": "其他地區",
+          "actions": [
+            {
+              "type": "message",
+              "label": "表參道-Bills鬆餅",
+              "text": "http://mary082878.pixnet.net/blog/post/300242179"
+            },
+            {
+              "type": "message",
+              "label": "新宿-Komeda's Coffee",
+              "text": "https://royaldreambee.pixnet.net/blog/post/154249652-%E3%80%90%E6%97%A5%E6%9C%AC%E6%9D%B1%E4%BA%AC%E3%80%91%E6%8E%92%E9%9A%8A%E4%B9%9F%E8%A6%81%E5%90%83%E7%9A%84%E8%B6%85%E5%80%BC%E6%97%A9%E9%A4%90%E3%80%8C%E3%82%B3%E3%83%A1%E3%83%80"
+            },
+            {
+              "type": "message",
+              "label": "新宿-HARBS",
+              "text": "https://upssmile.com/34556/harbs-lumine-est"
+            }
+          ]
+        },
+        {
+          "text": "其他地區",
+          "actions": [
+            {
+              "type": "message",
+              "label": "銀座-中村藤吉",
+              "text": "https://tisshuang.tw/blog/post/tokichi"
+            },
+            {
+              "type": "message",
+              "label": "吉祥寺-美登利壽司",
+              "text": "https://venuslin.tw/sushinomidori/"
+            },
+            {
+              "type": "message",
+              "label": "吉祥寺-幸福鬆餅",
+              "text": "https://alina00.com/magia/"
+            }
+          ]
+        }
+      ]
+    }
+  };
   
   var odaibaList = {
     "type": "template",
