@@ -252,7 +252,7 @@ var mySchedule = {
       "type": "carousel",
       "columns": [
         {
-          "text": "列表1",
+          "text": "扣扣精選1",
           "actions": [
             {
               "type": "message",
@@ -272,27 +272,27 @@ var mySchedule = {
           ]
         },
         {
-          "text": "新宿附近",
+          "text": "扣扣精選2",
           "actions": [
             {
               "type": "message",
-              "label": "niko and",
+              "label": "新宿-niko and",
               "text": "https://blog.plain-me.com/2015/10/6664/"
             },
             {
               "type": "message",
-              "label": "TOKYO BOPPER",
+              "label": "新宿-TOKYO BOPPER",
               "text": "https://matcha-jp.com/tw/396"
             },
             {
               "type": "message",
-              "label": "古著",
+              "label": "新宿-古著",
               "text": "https://www.moshimoshi-nippon.jp/zh-hant/118856"
             }
           ]
         },
         {
-          "text": "吉祥寺附近",
+          "text": "扣扣精選3",
           "actions": [
             {
               "type": "message",
