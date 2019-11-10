@@ -195,7 +195,7 @@ function handleEvent(event) {
       return client.replyMessage(event.replyToken, wishList);
   }else if(input === '想吃' || input.toUpperCase() === 'EAT'){
       return client.replyMessage(event.replyToken, eatList);
-  }else if(input === '扣扣'){
+  }else if(input === '扣扣' || input.toUpperCase() === 'COLD'){
     return client.replyMessage(event.replyToken, coldList);
   }
 
